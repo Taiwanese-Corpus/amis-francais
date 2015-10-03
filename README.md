@@ -39,6 +39,10 @@ $ python hocr2pars.py 010
 ```
 我們試過先切成一條一條的，再丟進 tesseract ，辨識率比一次辨識整頁低了許多。所以改用這個方式。
 
+臺灣言語資料庫
+----
+請用 `python2 moedict.py` 轉成萌典使用的 dict-amis-mp.json 檔。
+再用 `virtualenv venv --python python3 && . venv/bin/activate && pip install pyyaml && python 轉到臺灣言語資料庫.py`，產生`dict-amis-mp.yaml`檔供匯入。
 
 License
 =======
